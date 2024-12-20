@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>News | Jingquan Wang's Blog</title><meta name="author" content="Jingquan Wang"><meta name="copyright" content="Jingquan Wang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="                 News（最新动态）              /* 标签容器 */         .tag-container {             display: flex;             flex-wrap: wrap;            ..."><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://jing-quan-wang.github.io/2024/12/18/index/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'News',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Bio/"><span> Bio</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw hide"></i><span> Experience</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Education/"><span> Education &amp; Academic Positions</span></a></li><li><a class="site-page child" href="/awards/"><i class="fa-fw fa-light fa-star"></i><span> Awards &amp; Honors</span></a></li><li><a class="site-page child" href="/projects/"><span> Projects &amp; Roles</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Research/"><span> Research</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw hide"></i><span> Publications</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/paper/"><span> Journal Article (First &amp; Corresponding Author)</span></a></li><li><a class="site-page child" href="/coauthor/"><span> Journal Article (Coauthor)</span></a></li><li><a class="site-page child" href="/Patents/"><span> Patents</span></a></li><li><a class="site-page child" href="/Presentations/"><span> Conferences</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><span> Contact</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Jingquan Wang's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">News</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Bio/"><span> Bio</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw hide"></i><span> Experience</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Education/"><span> Education &amp; Academic Positions</span></a></li><li><a class="site-page child" href="/awards/"><i class="fa-fw fa-light fa-star"></i><span> Awards &amp; Honors</span></a></li><li><a class="site-page child" href="/projects/"><span> Projects &amp; Roles</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Research/"><span> Research</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw hide"></i><span> Publications</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/paper/"><span> Journal Article (First &amp; Corresponding Author)</span></a></li><li><a class="site-page child" href="/coauthor/"><span> Journal Article (Coauthor)</span></a></li><li><a class="site-page child" href="/Patents/"><span> Patents</span></a></li><li><a class="site-page child" href="/Presentations/"><span> Conferences</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><span> Contact</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">News</h1><div id="post-meta"><div class="meta-firstline"></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News（最新动态）</title>
+    <style>
+        /* 标签容器 */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .tag {
+            padding: 12px 24px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .tag:hover {
+            background-color: #1c5c4c;
+            color: white;
+            transform: scale(1.1);
+        }
+        /* 新闻卡容器 */
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 15px;
+        }
+        /* 每行的新闻卡 */
+        .news-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        /* 单个新闻卡 */
+        .news-card {
+            flex: 1 1 48%;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .news-card .image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .news-card .content {
+            padding: 20px;
+        }
+        .news-card .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .news-card .title:hover {
+            color: #007BFF;
+        }
+        .news-card .summary {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .news-card .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #888;
+        }
+        .news-card .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: 12px;
+            background-color: #4CAF50;
+            border-radius: 15px;
+            color: white;
+            text-transform: capitalize;
+        }
+        .news-card .tag.ah {
+            background-color: #8B4513;
+        }
+        .news-card .tag.sd {
+            background-color: #1E90FF;
+        }
+        .news-card .tag.lf {
+            background-color: #808080;
+        }
+        .news-card .tag.pg {
+            background-color: #FFD700;
+        }
+        .news-card .tag.cl {
+            background-color: #A52A2A;
+        }
+        .news-card .tag.small {
+            background-color: #32CD32;
+        }
+        .news-card .tag.tall {
+            background-color: #2E8B57;
+        }
+        .news-card .tag.short {
+            background-color: #B22222;
+        }
+        .news-card .tag.ru {
+            background-color: #FF6347;
+        }
+        .news-card .timestamp {
+            font-size: 12px;
+            color: #888;
+        }
+/* 分页按钮 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pagination button {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    padding: 0; /* 去掉 padding，避免影响居中 */
+    font-size: 16px; /* 调整字体大小 */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: transparent; /* 背景透明 */
+    color: black; /* 字体颜色为黑色 */
+    transition: color 0.3s ease, transform 0.2s ease;
+    height: 40px; /* 设置一个固定的高度 */
+    width: 40px; /* 设置一个固定的宽度 */
+    line-height: 40px; /* 设置与高度相等的行高，使文本垂直居中 */
+}
+.pagination button:hover {
+    color: #1c5c4c; /* 悬停时字体变成蓝色 */
+    transform: scale(1.1);
+}
+.pagination .active {
+    font-weight: bold; /* 当前页码加粗 */
+    color: #1c5c4c; /* 当前页码字体颜色为蓝色 */
+}
+    </style>
+</head>
+<body>
+    <h1><font color="#1c5c4c">| News（最新动态）</font></h1>  
+    <div class="tag-container">
+        <button class="tag" data-tag="all">All</button>
+        <button class="tag" data-tag="ru">Research Updates（科研进展）</button>
+        <button class="tag" data-tag="ah">Awards & Honors（奖励荣誉）</button>
+        <!-- <button class="tag" data-tag="sd">Student Development（学生培养）</button> -->
+        <button class="tag" data-tag="lf">Lectures & Forums（讲座论坛）</button>
+        <!-- <button class="tag" data-tag="pg">Postdoc Recruitment & Graduate Admissions（博后/研究生招聘）</button> -->
+        <button class="tag" data-tag="cl">Campus Life（日常生活）</button>
+    </div>
+    <div class="news-container" id="news-container">
+        <div class="news-row" id="news-row-1"></div>
+        <div class="news-row" id="news-row-2"></div>
+        <div class="news-row" id="news-row-3"></div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+    <script>
+        const newsData = [
+            { title: "空气质量报告", summary: "最新的空气质量数据，分析污染源。", timestamp: "2024-12-10", tag: "ru", imageUrl: "https://via.placeholder.com/400x200?text=Air", link: "https://example.com/air" },
+            { title: "土壤污染问题", summary: "当前土壤污染的严重性及解决方案", timestamp: "2024-12-11", tag: "ah", imageUrl: "https://via.placeholder.com/400x200?text=Soil", link: "https://example.com/soil" },
+            { title: "水资源管理", summary: "如何有效管理水资源，保护环境", timestamp: "2024-12-12", tag: "lf", imageUrl: "https://via.placeholder.com/400x200?text=Water", link: "https://example.com/water" },
+        ];
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        // 渲染新闻
+        function renderNews(newsData) {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentNews = newsData.slice(startIndex, endIndex);
+            const rows = [document.getElementById('news-row-1'), document.getElementById('news-row-2'), document.getElementById('news-row-3')];
+            rows.forEach(row => row.innerHTML = ''); // 清空之前的新闻卡片
+            currentNews.forEach((news, index) => {
+                const rowIndex = Math.floor(index / 2); // 每行最多2条
+                const newsRow = rows[rowIndex];
+                const cardHTML = `
+                    <div class="news-card">
+                        <div class="image" style="background-image: url(${news.imageUrl});"></div>
+                        <div class="content">
+                            <a href="${news.link}" target="_blank" class="title">${news.title}</a>
+                            <div class="summary">${news.summary}</div>
+                            <div class="meta">
+                                <div class="timestamp">${news.timestamp}</div>
+                                <div class="tag ${news.tag}">${news.tag.charAt(0).toUpperCase() + news.tag.slice(1)}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                newsRow.innerHTML += cardHTML;
+            });
+            renderPagination(newsData.length);
+        }
+        // 渲染分页
+        function renderPagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                if (i === currentPage) {
+                    pageButton.classList.add('active');
+                }
+                pageButton.addEventListener('click', () => {
+                    currentPage = i;
+                    renderNews(newsData);
+                });
+                pagination.appendChild(pageButton);
+            }
+        }
+        // 过滤新闻
+        function filterNews(tag) {
+            let filteredNews = newsData;
+            if (tag !== 'all') {
+                filteredNews = newsData.filter(news => news.tag === tag);
+            }
+            renderNews(filteredNews);
+        }
+        // 添加事件监听器
+        document.querySelectorAll('.tag').forEach(button => {
+            button.addEventListener('click', () => {
+                const tag = button.getAttribute('data-tag');
+                currentPage = 1; // Reset page to 1 when changing filter
+                filterNews(tag);
+            });
+        });
+        renderNews(newsData);
+    </script>
+</body>
+</html>
+</article><div class="tag_share"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jingquan Wang</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.researchgate.net/profile/Jingquan-Wang-3"><i class="fa-brands fa-researchgate"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://orcid.org/0000-0002-6955-8905" target="_blank" title="ORCID"><i class="fa-brands fa-orcid" style="color: #24292e;"></i></a><a class="social-icon" href="https://www.researchgate.net/profile/Jingquan-Wang-3" target="_blank" title="Researchgate"><i class="fa-brands fa-researchgate" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:henrywang_scu@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2331639478" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"> </div><script defer src="/js/cursor.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
